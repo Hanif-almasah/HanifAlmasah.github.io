@@ -15,7 +15,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-section::before{
+section::before{ 
    content: ' ';
     position: absolute;
     bottom: 0;
