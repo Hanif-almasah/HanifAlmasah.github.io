@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <section>
+        <img src="img-sendiri/bg.png" alt="" id="bg">
+        <img src="img-sendiri/matahari.png" alt="" id="matahari">
+        <img src="img-sendiri/gunung-left.png" alt="" id="gunung_left">
+        <img src="img-sendiri/gunung-right.png" alt="" id="gunung_right">
+        <img src="img-sendiri/bukit-left.png" alt="" id="bukit_left">
+        <img src="img-sendiri/bukit-right.png" alt="" id="bukit_right">
+
+    </section>
+
+    <div class="text">
+        <h2>paralax pertama dengan resource sendiri</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure dicta saepe qui ullam commodi a
+            iste, voluptate et debitis aut? Temporibus ab voluptatibus repellendus ducimus rerum debitis aspernatur
+            iste! ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum! Eligendi incidunt quae
+            exercitationem iure assumenda eos eum, quis tempore aspernatur, corporis culpa, non ab quas officia autem ad
+            expedita.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure dicta saepe qui ullam commodi a
+            iste, voluptate et debitis aut? Temporibus ab voluptatibus repellendus ducimus rerum debitis aspernatur
+            iste! ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum! Eligendi incidunt quae
+            exercitationem iure assumenda eos eum, quis tempore aspernatur, corporis culpa, non ab quas officia autem ad
+            expedita.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure dicta saepe qui ullam commodi a
+            iste, voluptate et debitis aut? Temporibus ab voluptatibus repellendus ducimus rerum debitis aspernatur
+            iste! ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum! Eligendi incidunt quae
+            exercitationem iure assumenda eos eum, quis tempore aspernatur, corporis culpa, non ab quas officia autem ad
+            expedita.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure dicta saepe qui ullam commodi a
+            iste, voluptate et debitis aut? Temporibus ab voluptatibus repellendus ducimus rerum debitis aspernatur
+            iste! ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum! Eligendi incidunt quae
+            exercitationem iure assumenda eos eum, quis tempore aspernatur, corporis culpa, non ab quas officia autem ad
+            expedita.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure dicta saepe qui ullam commodi a
+            iste, voluptate et debitis aut? Temporibus ab voluptatibus repellendus ducimus rerum debitis aspernatur
+            iste! ,Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum! Eligendi incidunt quae
+            exercitationem iure assumenda eos eum, quis tempore aspernatur, corporis culpa, non ab quas officia autem ad
+            expedita.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, magni quia sit reiciendis cum doloribus
+            dolorem itaque velit dolor labore rem nam placeat, ullam temporibus quaerat tempore accusantium
+            reprehenderit voluptate?</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to('#bg', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5
+        })
+        gsap.to('#matahari', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5
+        })
+        gsap.to('#bukit_left', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -200
+        })
+        gsap.to('#bukit_right', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 200
+        })
+        gsap.to('#gunung_right', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 90
+        })
+        gsap.to('#gunung_left', {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -90
+        })
+        gsap.from(".text", {
+            scrollTrigger: {
+                trigger: '.text',
+
+            },
+            opacity: 0,
+            x: -500,
+            duration: 1
+        });
+    </script>
+</body>
+
+</html>
